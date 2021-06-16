@@ -16,21 +16,10 @@ export default function Home() {
         <MediaQuery query="(min-device-width: 1024px)" and query="(orientation: landscape)">
           <h1>Driving Simulator Host Helper Tool 1</h1>
           <style jsx>{`
-            {
-              background: #4082eb;
-              height: 100vh;
-              width: 100vw;
-              color: #fff;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              overflow: hidden;
-              font-family: "Work Sans", sans-serif;
-              font-weight: 400;
-              text-align: center;
-            }
             h1 {
               font-size: 1.75rem;
+              color: #4082eb;
+              text-align: center
             }
           `}</style>
         </MediaQuery>
