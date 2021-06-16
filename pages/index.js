@@ -13,8 +13,26 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
       </Head>
       <div>
-        <MediaQuery query="(min-device-width: 1024px)" and query="(orientation: landscape)">
-          <h1>Driving Simulator Host Helper Tool</h1>
+        <MediaQuery minDeviceWidth={1024} and query="(orientation: landscape)">
+          <h1>Driving Simulator Host Helper Tool 1</h1>
+          <style jsx>{`
+            * {
+              background: #4082eb;
+              height: 100vh;
+              width: 100vw;
+              color: #fff;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              overflow: hidden;
+              font-family: "Work Sans", sans-serif;
+              font-weight: 400;
+              text-align: center;
+            }
+            h1 {
+              font-size: 1.75rem;
+            }
+          `}</style>
         </MediaQuery>
         <MediaQuery query="(max-device-width: 1023px)">
           <div>
