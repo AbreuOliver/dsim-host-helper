@@ -16,7 +16,7 @@ export default function Home() {
         <MediaQuery query="(min-device-width: 1024px)" and query="(orientation: landscape)">
           <h1>Driving Simulator Host Helper Tool 1</h1>
           <style jsx>{`
-            * {
+            {
               background: #4082eb;
               height: 100vh;
               width: 100vw;
