@@ -1,11 +1,11 @@
 .container {
-  min-height: 100vh;
-  padding: 0 0.5rem;
+  /* padding: 0 0.5rem; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  width: 100vw;
 }
 
 .main {
@@ -15,11 +15,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 90vh;
+  width: 100%;
+  /* background-color: red; */
 }
 
 .footer {
-  width: 100%;
-  height: 100px;
+  width: 100vw;
+  height: 10vh;
   border-top: 1px solid #eaeaea;
   display: flex;
   justify-content: center;
@@ -33,15 +36,14 @@
   flex-grow: 1;
 }
 
-.title a {
-  color: #0070f3;
-  text-decoration: none;
+.footer img {
+  height: 25px;
+  margin: 0 10px; 
 }
 
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
+.title span {
+  color: #0070f3;
+  text-decoration: none;
 }
 
 .title {
@@ -102,12 +104,6 @@
   font-size: 1.5rem;
 }
 
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
-}
-
 .logo {
   height: 1em;
   margin-left: 0.5rem;
@@ -118,4 +114,166 @@
     width: 100%;
     flex-direction: column;
   }
+}
+
+
+/* ============================================================================= */
+
+.dualPaneContainer {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dualPaneContainer h1 {
+  font-size: 2.5rem;
+}
+
+.leftPaneContainer {
+  height: 98vh;
+  width: 40vw;
+  margin-left: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #0070f3;
+  background: radial-gradient(circle, #0070f3 0%, #5697ea 120%); 
+  color: white;
+  flex-grow: 1;
+  border-radius: 10px;
+}
+
+.leftPaneMain {
+  width: 80%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  overflow-y: none;
+  text-align: left;
+  /* border: 1px solid yellow; */
+} 
+
+.leftPaneMain p {
+  line-height: 1.55;
+}
+
+.rightPaneContainer {
+  height: 100vh;
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  /* border: 1px solid black; */
+}
+
+.rightHeader p {
+  color: grey;
+}
+
+.rightPaneTop {
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.rightPaneBottom {
+  height: 15vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.rightPaneMain {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-y: scroll;
+  text-align: center;
+  line-height: 1.55;
+    /* border: 2px dotted purple; */
+  overflow-x: hidden;
+}
+
+.rightPaneText {
+  max-width: 60ch;
+  padding: 0 2rem;
+}
+
+.dualPaneContainer button {
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 10px;
+}
+
+
+.dualPaneContainer button:hover {
+  transform: scale(.95)
+}
+
+/* ===== */
+.landingPage {
+  border: 2px solid dodgerblue;
+}
+
+
+.leftPaneContainerPurple {
+  height: 98vh;
+  width: 40vw;
+  margin-left: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #0070f3;
+  background: radial-gradient(circle, #613db0 0%, #b4a3d8 120%); 
+  color: white;
+  flex-grow: 1;
+  border-radius: 10px;
+}
+
+.leftPaneContainerGreen {
+  height: 98vh;
+  width: 40vw;
+  margin-left: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: forestgreen;
+  /* background: radial-gradient(circle, #489b5e 0%, #458934 120%);  */
+  color: white;
+  flex-grow: 1;
+  border-radius: 10px;
+}
+
+.checklist {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.participantInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.box {
+  display: flex;
+  flex: 1;
 }
